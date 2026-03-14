@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "691161442784",
+    "project_id": "flutter-firebase-michhu12",
+    "storage_bucket": "flutter-firebase-michhu12.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691161442784:android:f5690c3a8b045693a06385",
+        "android_client_info": {
+          "package_name": "com.example.pilem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJt5OX_XsQytr9kdUw7O04C4baEXvcWyE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
