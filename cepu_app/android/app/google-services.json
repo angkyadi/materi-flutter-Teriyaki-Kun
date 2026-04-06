@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "398065094684",
+    "project_id": "cepu-firebase-michu",
+    "storage_bucket": "cepu-firebase-michu.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398065094684:android:e3db2d971a757a00bb0fd9",
+        "android_client_info": {
+          "package_name": "com.example.cepu_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGdVGXWdF8PisRQE4wQlCfn1V7egj7YZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
