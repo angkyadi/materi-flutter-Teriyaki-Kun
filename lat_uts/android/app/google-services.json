@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "169727934708",
+    "project_id": "lat-uts-michu",
+    "storage_bucket": "lat-uts-michu.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169727934708:android:0cb66dfb6d3fe2462cdea1",
+        "android_client_info": {
+          "package_name": "com.example.lat_uts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ1x9pm3rgmPtchQYdFjMEIjSQqRyzER8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
