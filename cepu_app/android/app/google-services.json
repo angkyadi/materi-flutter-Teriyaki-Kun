@@ -12,7 +12,12 @@
           "package_name": "com.example.cepu_app"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "398065094684-p8shj6g2eam8ggkefo5ai991uh9gropc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCGdVGXWdF8PisRQE4wQlCfn1V7egj7YZc"
@@ -20,7 +25,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398065094684-p8shj6g2eam8ggkefo5ai991uh9gropc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "398065094684-om5ltemrsrl6l8k6ns3bv62lh3cndifn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cepuApp"
+              }
+            }
+          ]
         }
       }
     }
