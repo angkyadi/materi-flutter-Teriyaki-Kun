@@ -14,15 +14,6 @@ class _DataNapiState extends State<DataNapi> {
   final _crimeController = TextEditingController();
 
   @override
-  void dispose() {
-    _namaController.dispose();
-    _jkController.dispose();
-    _ageController.dispose();
-    _crimeController.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Data Napi')),
