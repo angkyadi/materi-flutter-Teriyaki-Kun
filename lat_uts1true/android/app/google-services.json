@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "158785144699",
+    "firebase_url": "https://uts-true-michu-default-rtdb.firebaseio.com",
+    "project_id": "uts-true-michu",
+    "storage_bucket": "uts-true-michu.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158785144699:android:2b0fe4720dc0ae58b05fde",
+        "android_client_info": {
+          "package_name": "com.example.lat_uts1true"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJgSCImFfw6U4fH6usB-EO6FMeHd2g4jM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
