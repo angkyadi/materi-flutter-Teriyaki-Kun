@@ -41,49 +41,47 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCa6skVUZjNLSJFaKliaMY42B5v475LLtM',
-    appId: '1:398065094684:web:6abb396dd4a0f910bb0fd9',
-    messagingSenderId: '398065094684',
-    projectId: 'cepu-firebase-michu',
-    authDomain: 'cepu-firebase-michu.firebaseapp.com',
-    storageBucket: 'cepu-firebase-michu.firebasestorage.app',
+    apiKey: 'AIzaSyANAzvls5G_xdVx5LPxB7BKqsbjyl78SMA',
+    appId: '1:476508855204:web:09fb54817f8c471b6a3f31',
+    messagingSenderId: '476508855204',
+    projectId: 'notes-michu',
+    authDomain: 'notes-michu.firebaseapp.com',
+    storageBucket: 'notes-michu.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCGdVGXWdF8PisRQE4wQlCfn1V7egj7YZc',
-    appId: '1:398065094684:android:dab1c8b690b33e45bb0fd9',
-    messagingSenderId: '398065094684',
-    projectId: 'cepu-firebase-michu',
-    storageBucket: 'cepu-firebase-michu.firebasestorage.app',
+    apiKey: 'AIzaSyA12NcjZE_uks7ALbAp41LlsvUefEv8cYw',
+    appId: '1:476508855204:android:742786313e4fd3fc6a3f31',
+    messagingSenderId: '476508855204',
+    projectId: 'notes-michu',
+    storageBucket: 'notes-michu.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDQ_vFESNNrvhuboQpoavgeHmwYyrbaqj0',
-    appId: '1:398065094684:ios:5234b9fbd5805d4dbb0fd9',
-    messagingSenderId: '398065094684',
-    projectId: 'cepu-firebase-michu',
-    storageBucket: 'cepu-firebase-michu.firebasestorage.app',
-    iosClientId: '398065094684-q624g8tmulg6i8ka3febqkkicrv5e655.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCcX6KxvAD1VxxajIHelljfH-tBYji3has',
+    appId: '1:476508855204:ios:65a5354364cb4a596a3f31',
+    messagingSenderId: '476508855204',
+    projectId: 'notes-michu',
+    storageBucket: 'notes-michu.firebasestorage.app',
     iosBundleId: 'com.example.notes',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDQ_vFESNNrvhuboQpoavgeHmwYyrbaqj0',
-    appId: '1:398065094684:ios:5234b9fbd5805d4dbb0fd9',
-    messagingSenderId: '398065094684',
-    projectId: 'cepu-firebase-michu',
-    storageBucket: 'cepu-firebase-michu.firebasestorage.app',
-    iosClientId: '398065094684-q624g8tmulg6i8ka3febqkkicrv5e655.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCcX6KxvAD1VxxajIHelljfH-tBYji3has',
+    appId: '1:476508855204:ios:65a5354364cb4a596a3f31',
+    messagingSenderId: '476508855204',
+    projectId: 'notes-michu',
+    storageBucket: 'notes-michu.firebasestorage.app',
     iosBundleId: 'com.example.notes',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCa6skVUZjNLSJFaKliaMY42B5v475LLtM',
-    appId: '1:398065094684:web:a1af162c13f4e2e1bb0fd9',
-    messagingSenderId: '398065094684',
-    projectId: 'cepu-firebase-michu',
-    authDomain: 'cepu-firebase-michu.firebaseapp.com',
-    storageBucket: 'cepu-firebase-michu.firebasestorage.app',
+    apiKey: 'AIzaSyANAzvls5G_xdVx5LPxB7BKqsbjyl78SMA',
+    appId: '1:476508855204:web:8fdf6f21962c1f076a3f31',
+    messagingSenderId: '476508855204',
+    projectId: 'notes-michu',
+    authDomain: 'notes-michu.firebaseapp.com',
+    storageBucket: 'notes-michu.firebasestorage.app',
   );
 
 }
