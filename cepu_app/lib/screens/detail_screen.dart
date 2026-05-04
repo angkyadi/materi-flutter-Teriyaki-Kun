@@ -118,6 +118,8 @@ class DetailScreen extends StatelessWidget {
                         ),
                       ],
                     ),
+                    const SizedBox(height: 12),
+                    ElevatedButton(onPressed: onPressed, child: child)
                   ],
                 ],
               ),
