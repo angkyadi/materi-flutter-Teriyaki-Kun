@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:cepu_app/models/models.dart';
+import 'package:cepu_app/models/post.dart';
 import 'package:cepu_app/screens/detail_screen.dart';
 import 'package:cepu_app/services/post_service.dart';
 import 'package:flutter/material.dart';
@@ -35,12 +35,10 @@ class PostListItem extends StatelessWidget {
     }
   }
 
-  //install dependency share_plus
-  //flutter pub add share_plus
   void _sharePost() {
     final text =
-        '${post.category ?? ''}\n${post.description ?? ''}\nPosted by: ${post.userFullName ?? ''}';
-    SharePlus.instance.share(ShareParams(text: text));
+        '${post.category ?? ''}\n${post.description ?? ''}\nPosted by: ${post.fullName ?? ''}';
+    Share.share(text);
   }
 
   @override
@@ -49,9 +47,9 @@ class PostListItem extends StatelessWidget {
       margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       child: ListTile(
         onTap: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (_) => DetailScreen(post: post)),
-          );
+          Navigator.of(
+            context,
+          ).push(MaterialPageRoute(builder: (_) => DetailScreen(post: post)));
         },
         leading: post.image != null && post.image!.isNotEmpty
             ? ClipRRect(
@@ -80,7 +78,7 @@ class PostListItem extends StatelessWidget {
             ),
             const SizedBox(height: 4),
             Text(
-              post.userFullName ?? '',
+              post.fullName ?? '',
               style: const TextStyle(fontSize: 12, color: Colors.grey),
             ),
           ],

@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:cepu_app/models/models.dart';
+import 'package:cepu_app/models/post.dart';
 import 'package:cepu_app/services/post_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +37,7 @@ class DetailScreen extends StatelessWidget {
 
   void _sharePost() {
     final text =
-        '${post.category ?? ''}\n${post.description ?? ''}\nPosted by: ${post.userFullName ?? ''}';
+        '${post.category ?? ''}\n${post.description ?? ''}\nPosted by: ${post.fullName ?? ''}';
     SharePlus.instance.share(ShareParams(text: text));
   }
 
@@ -97,7 +97,7 @@ class DetailScreen extends StatelessWidget {
                       const Icon(Icons.person, size: 18, color: Colors.grey),
                       const SizedBox(width: 4),
                       Text(
-                        post.userFullName ?? 'Unknown',
+                        post.fullName ?? 'Unknown',
                         style: const TextStyle(color: Colors.grey),
                       ),
                     ],
@@ -119,7 +119,8 @@ class DetailScreen extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 12),
-                    ElevatedButton(onPressed: onPressed, child: child)
+                    ElevatedButton(onPressed: () {print("Button ditekan");},child: const Text("Klik Saya"),
+)
                   ],
                 ],
               ),

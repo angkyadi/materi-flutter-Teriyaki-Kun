@@ -23,11 +23,20 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        return ios;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for ios - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
-        return windows;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -41,49 +50,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCa6skVUZjNLSJFaKliaMY42B5v475LLtM',
-    appId: '1:398065094684:web:84749849810b0315bb0fd9',
-    messagingSenderId: '398065094684',
-    projectId: 'cepu-firebase-michu',
-    authDomain: 'cepu-firebase-michu.firebaseapp.com',
-    storageBucket: 'cepu-firebase-michu.firebasestorage.app',
+    apiKey: 'AIzaSyAxGvbQzQtCVqcmeB5Z972G7z8V3guNxAg',
+    appId: '1:216186419333:web:0c7ab4182eb32b485a51ec',
+    messagingSenderId: '216186419333',
+    projectId: 'cepuappangky',
+    authDomain: 'cepuappangky.firebaseapp.com',
+    storageBucket: 'cepuappangky.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCGdVGXWdF8PisRQE4wQlCfn1V7egj7YZc',
-    appId: '1:398065094684:android:e3db2d971a757a00bb0fd9',
-    messagingSenderId: '398065094684',
-    projectId: 'cepu-firebase-michu',
-    storageBucket: 'cepu-firebase-michu.firebasestorage.app',
+    apiKey: 'AIzaSyBpLqbdNPeJzJkxA6oixuXtOLgdYgPrr8c',
+    appId: '1:216186419333:android:32d51438b4e46fd55a51ec',
+    messagingSenderId: '216186419333',
+    projectId: 'cepuappangky',
+    storageBucket: 'cepuappangky.firebasestorage.app',
   );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDQ_vFESNNrvhuboQpoavgeHmwYyrbaqj0',
-    appId: '1:398065094684:ios:1ef12f78cdcce9fbbb0fd9',
-    messagingSenderId: '398065094684',
-    projectId: 'cepu-firebase-michu',
-    storageBucket: 'cepu-firebase-michu.firebasestorage.app',
-    iosClientId: '398065094684-om5ltemrsrl6l8k6ns3bv62lh3cndifn.apps.googleusercontent.com',
-    iosBundleId: 'com.example.cepuApp',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDQ_vFESNNrvhuboQpoavgeHmwYyrbaqj0',
-    appId: '1:398065094684:ios:1ef12f78cdcce9fbbb0fd9',
-    messagingSenderId: '398065094684',
-    projectId: 'cepu-firebase-michu',
-    storageBucket: 'cepu-firebase-michu.firebasestorage.app',
-    iosClientId: '398065094684-om5ltemrsrl6l8k6ns3bv62lh3cndifn.apps.googleusercontent.com',
-    iosBundleId: 'com.example.cepuApp',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCa6skVUZjNLSJFaKliaMY42B5v475LLtM',
-    appId: '1:398065094684:web:6abb396dd4a0f910bb0fd9',
-    messagingSenderId: '398065094684',
-    projectId: 'cepu-firebase-michu',
-    authDomain: 'cepu-firebase-michu.firebaseapp.com',
-    storageBucket: 'cepu-firebase-michu.firebasestorage.app',
-  );
-
 }

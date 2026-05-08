@@ -1,3 +1,4 @@
+import 'package:cepu_app/firebase_options.dart';
 import 'package:cepu_app/screens/add_post_screens.dart';
 import 'package:cepu_app/screens/sign_in_screen.dart';
 import 'package:cepu_app/services/post_service.dart';
@@ -30,7 +31,9 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   String generateAvatarUrl(String? fullName) {
-    final name = (fullName != null && fullName.trim().isNotEmpty) ? fullName : 'User';
+    final name = (fullName != null && fullName.trim().isNotEmpty)
+        ? fullName
+        : 'User';
     final formattedName = name.trim().replaceAll(' ', '+');
     return 'https://ui-avatars.com/api/?name=$formattedName&color=FFFFFF&background=000000';
   }
@@ -57,14 +60,17 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(height: 8.0),
           Image.network(
             generateAvatarUrl(
-              FirebaseAuth.instance.currentUser?.displayName ?? FirebaseAuth.instance.currentUser?.email,
+              FirebaseAuth.instance.currentUser?.displayName ??
+                  FirebaseAuth.instance.currentUser?.email,
             ),
             width: 80,
             height: 80,
           ),
           const SizedBox(height: 8.0),
           Text(
-            FirebaseAuth.instance.currentUser?.displayName ?? FirebaseAuth.instance.currentUser?.email ?? 'Unknown User',
+            FirebaseAuth.instance.currentUser?.displayName ??
+                FirebaseAuth.instance.currentUser?.email ??
+                'Unknown User',
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 8.0),
