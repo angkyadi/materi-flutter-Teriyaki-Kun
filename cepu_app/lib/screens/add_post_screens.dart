@@ -3,10 +3,10 @@ import 'dart:typed_data';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:flutter_image_compress/flutter_image_compress.dart';
+import 'package:image_compress/image_compress.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:cepu_app/models/post.dart';
-import 'package:cepu_app/service/post_service.dart';
+import 'package:cepu_app/services/post_service.dart';
 import 'package:http/http.dart' as http;
 
 class AddPostScreen extends StatefulWidget {
@@ -223,7 +223,7 @@ class _AddPostScreenState extends State<AddPostScreen> {
     });
     try {
       await _getLocation();
-      postService.addPost(
+      PostService.addPost(
         Post(
           category: _category,
           description: _descriptionController.text,
