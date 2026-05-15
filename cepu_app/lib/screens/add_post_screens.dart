@@ -3,7 +3,7 @@ import 'dart:typed_data';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:image_compress/image_compress.dart';
+import 'package:flutter_image_compress/flutter_image_compress.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:cepu_app/models/post.dart';
 import 'package:cepu_app/services/post_service.dart';
@@ -60,7 +60,7 @@ class _AddPostScreenState extends State<AddPostScreen> {
     if (_base64Image == null) return;
     setState(() => _isGenerating = true);
     try {
-      const apiKey = "AIzaSyDv5d_EMvEv9HBejeWyuAOiLrJbUWdIf1g";
+      const apiKey = "YOUR-API-KEY-HERE";
       const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=$apiKey';
       final body = jsonEncode({
         "contents": [
