@@ -263,6 +263,35 @@ class _AddPostScreenState extends State<AddPostScreen> {
       );
     }
   }
+  Future<void> sendNotificaionToTopic(String title, String body) async {
+  final url = Uri.parse('LINK-VERCEL');
+  final response = await http.post(
+    url,
+    headers: {'Content-Type': 'application/json'},
+    body: jsonEncode({
+      "topic": "berita-cepu",
+      "title": "Laporan Baru",
+      "body": body,
+      "senderName": senderName,
+      "senderPhotoUrl" :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROdFy3D0_qsicyRaMCCGt4DeFcIPJ37FduSQ&s" 
+    }),
+  );
+  if (response.statusCode == 200){
+    if(mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Notifikasi berhasil dikirim"))
+      );
+    }
+    else{
+      if(mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text("Gagal mengirim notifikasi:$(response.body)")),
+        );
+      }
+    }
+  }
+  
+  }
 
   @override
   Widget build(BuildContext context) {
